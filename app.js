@@ -78,19 +78,7 @@ thumbs: {
     swiper: tabbeNav,
 }
 });
-//header
-function changeHeader(){
-  let header = document.getElementById('header');
-  let scrollValue = window.scrollY;
 
-  if(scrollValue <= 50){
-    header.classList.remove('bg')
-  }else{
-    header.classList.add('bg')
-  }
-
-}
-window.addEventListener('scroll', changeHeader);
 //sidebar
 const menu = document.querySelector ('.mobile-menu');
 const sidebar = document.querySelector ('.sidebar');
@@ -125,6 +113,7 @@ const user = localStorage.getItem("currentUser");
   } else {
     authModal.style.display = "flex";
     loginForm.style.display="flex";
+    signUpForm.style.display="none";
   }
   });
 });
