@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <title>UNISEX.com</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<ul class="sidebar">
+	<li class="close-sidebar">
+		<a href="#">
+			<svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+			</svg>
+		</a>
+	</li>
+	<li class="sidebar-links"><a href="#home">Home</a></li>
+	<li class="sidebar-links"><a href="#about">About </a></li>
+	<li class="sidebar-links"><a href="#works">Works</a></li>
+	<li class="sidebar-links"><a href="#contact">Contact</a></li>
+	<li class="sidebar-links"><a href="#service">Services</a></li>
+</ul>
+
+<div id="authModal" class="modal hidden">
+	<div class="modal-content">
+		<span class="close">&times;</span>
+		<div id="authForms">
+			<div id="loginForm" class="hidden">
+				<h2>Login</h2>
+				<p>Welcome back!</p>
+				<span class="loginError"></span>
+				<input type="text" id="loginUsername" placeholder="Username" required>
+				<input type="email" name="email" id="loginEmail" placeholder="Email" required>
+				<input type="password" id="loginPassword" placeholder="Password" required>
+				<button id="loginBtn">Login</button>
+				<p>Don't have an account? <a href="#" id="showSignUp">Sign-Up</a></p>
+			</div>
+			<!-- Sign-Up Form -->
+			<div id="signUpForm"  class="hidden">
+				<h1>Create account</h1>
+				<p>Join our 100% free Bookings.</p>
+				
+				<span class="error"></span>
+				<label class="signuplabel" for="name">Name*</label>
+				<span class="nameError"></span>
+				<input type="text" id="signUpUsername" placeholder="Username" required>
+				<label for="email" class="signuplabel">Email*</label>
+				<span class="emailError"></span>
+				<input type="email" name="email" id="signUpEmail" placeholder="Email" required>
+				<label for="password" class="signuplabel">Password*</label>
+				<span class="passwordError"></span>
+				<input type="password" id="signUpPassword" placeholder="Password" required>
+				<button id="signUpBtn">Sign-Up</button>
+				<p class="loginp">Already have an account? <a href="#" id="showLogin">Login</a></p>
+			</div> 
+		</div>
+	</div>
+</div>
+
+<div class="header-hero-container">
+		<header id="header">
+			<nav>
+				<div class="menu">
+					<ul>
+						<li class="mobile-menu">
+							<a href="#">
+								<svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 -960 960 960" width="25px" fill="#fff"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+								</svg>
+							</a>
+						</li>
+						<li class="desktop-menu"><a href="#home">Home</a></li>
+						<li class="desktop-menu"><a href="#service">Services</a></li>
+						<li class="desktop-menu"><a href="#about">About </a></li>
+						<li class="desktop-menu"><a href="#works">Works</a></li>
+						<li class="desktop-menu"><a href="#contact">Contact</a></li>
+					</ul>
+				</div>
+			</nav>
+		
+			<div class="logo">
+				<a href="#">UNISEX</a>
+			</div>
+		
+			<div class="login">
+				<i class="fas fa-user" id="bookNowBtn"></i>
+			</div>
+		</header>
+		
+		<section id="home" class="hero-section">
+			<div class="hero-section-content"><h1>Your hair <br>deserves the best!</h1>
+				<p>Book an appointment in 3 steps...</p>
+				<a id="bookNowBtn"href="#">Book Now</a></div>
+		</section>
+</div>
+
+<section id="service" class="services">
+	<div class="services-container">
+		<h1>Our Services</h1>
+		<p>We are about providing an excellent experience to out client, Thats why you can easily book your reservation online and manage it from your account. Book now!, and pay in person.
+		</p>  
+	</div>
+		
+<nav class="tnav link-slide swiper">
+	
+	<ul class="swiper-wrapper">
+		<li class="swiper-slide"><a href="#0">Stylist Appointment</a></li>
+		<li class="swiper-slide"><a href="#0">Hair Stylist Appointment</a></li>
+		<li class="swiper-slide"><a href="#0">Services & Medical</a></li>
+		<li class="swiper-slide"><a href="#0">Style & Design Review</a></li>
+		<li class="swiper-slide"><a href="#0">Home Service</a></li>
+
+	</ul>
+</nav>
+	
+<div class="tabbed-item swiper">
+	<div class="products swiper-wrapper">
+		<div class="item swiper-slide">
+			<p>
+				This is an in-salon appointment with one of our certified stylist. You will have the full attention of your stylist for 90 minutes while trying on your favourite hair cuts and stylesthats fits you etc and receving the best knowledge, advice and inspiration!
+			Consultations with us are always relaxed, fun and empowring.
+			</p>
+			<button id="bookNowBtn">Book now</button>
+			
+		</div>
+		<!--stylist and appointments-->
+
+		<div class="item swiper-slide">
+			<p>The perfect way to make finding your hair cut that you want even more special... When you book your luxe stylist appointment you will have the whole salon to yourself for two hours and can bring your friends with you as you'd like!
+				Pop the champagne and enjoy some lush treats while trying on hair styles that fit you, and having a whole lot of fun.</p>
+				<button id="bookNowBtn">Book now</button>
+		</div>
+		<!--luxe-->
+
+		<div class="item swiper-slide">
+			<p>In recognition of the amazing work done by our services and medical personel, we're honoured to offer a free consultant and 10% off a hair cut for any of the following : Firefighters, Doctors, Soilders and paramedics</p>
+			<button id="bookNowBtn">Book now</button>
+		</div>
+		<!--services and medical-->
+
+		<div class="item swiper-slide">
+			<p>This is a one-on-one virtual consultation where you will connect with one of our amazing stylists via zoom. We'll chat about your wants and needs for a hair style or cut and narrow down your favourite. You'll gat an idea of what to expect, and put your mind at ease before coming in store to try it on. Style and Design Reviews are free of charge and carry no obligations. They can help immensly with pre consultation nerves, so you will feel comfortable amnd prepared with more clarity to find your style and looks.</p>
+			<button id="bookNowBtn">Book now</button>
+		</div>
+		<!--style and design-->
+
+		<div class="item swiper-slide">
+			<p>
+				We want every individual in the world to have the chance to be what they want to look like "cute, beautiful...", which is why you can now recieve hair cuts and treatments from home cuts from! This service is for those that can't make it in to one of our salons. Once you've had your Style & Design  Review, we will send pictures of your top three choices of hair cut and style to you to try on in a virtual consultation with your stylist. All appointments are done via zoom and we will guide you every step of the wayfrom the comfort of your living room making a truly unique experience!
+			</p>
+			<button id="bookNowBtn">Book now</button>
+		</div>
+		<!--from home-->
+	
+	</div>
+</div>
+</section>
+
+<section id="about" class="about-salon">
+        
+	<div class="about-salon-image">
+		<img src="/assets/pexels-ricaldo-donaldson-811733-2077169.jpg" alt="">
+	</div>
+	<div class="about-salon-text">
+		<h1>Our Salon</h1>
+		<p>Welcome to Unisex, your premier unisex salon destination. Our expert team provides top-notch services in a warm and inviting atmosphere. From stylish cuts to rejuvenating spa treatments, we cater to your uniques needs and prefrences.</p>
+
+		<p>At <span>Unisex</span>, we're passionate about delivering exceptional service and ensuring that every visit leaves you feeling refreshed and revitalized. Our team stays up-to-date with the latest trends and techniques to guarantee outstanding results. Whether you're seeking a quick trim or a bold new look, we're here to help you look and feel your best.</p>
+	</div>
+
+</section>
+
+<section class="testimonials">
+	<div class="testimonial-container swiper">
+		<div class="testimonial-content">
+			<h2>Testimonial</h2>
+			<div class="testimonial-wrapper swiper-wrapper">
+				<div class="testimonial-text swiper-slide">
+					<div class="card-content">
+						<h5 class="name">Alex Yuana</h5>
+						<p class="description">Love this salon! Always leave feeling refreshed and confident. The team is talented, friendly, and really listens to give you the best of what you want...</p>
+						
+						
+					</div>
+				</div>
+				<div class="testimonial-text swiper-slide">
+					<div class="card-content">
+						<h5 class="name">Anthony Joe</h5>
+						<p class="description">Amazing service! Talented team, great vibes. I'm hooked!</p>
+						
+						
+					</div>
+				</div>
+				<div class="testimonial-text swiper-slide">
+					<div class="card-content">
+						<h5 class="name">Kevin Joe</h5>
+						<p class="description">I've been going to Unisex for years and I'm always blown away by the exceptional service! The talented team listens to your needs, offers expert advice, and works magic to leave you feeling confident and refreshed. From cuts to colors, and styles to pampering treatments, this salon truely has it all!... </p>
+					</div>
+				</div>  
+			</div>
+		</div>
+		<div class="swiper-button-next swiper-navBtn"></div>
+		<div class="swiper-button-prev swiper-navBtn"></div>
+		<div class="swiper-pagination"></div>
+	</div>
+</section>
+
+<section class="our-styles">
+	<h2>Owner & Master Stylist</h2>
+	<div class="slide-container swiper">
+		<div class="slide-content">
+			<div class="card-wrapper swiper-wrapper">
+				<div class="card swiper-slide">
+					<div class="image-content">
+	
+						<div class="card-image">
+							<img src="./assets/ourwork.jpg" alt="" class="card-img">
+						</div>
+					</div>
+
+					<div class="card-content">
+						<p class="description">Say a few words about this person's expertise, background and personality.</p>
+						<p class="description">Let people get an idea of who will take care of their hair.</p>
+					</div>
+				</div>
+				<div class="card swiper-slide">
+					<div class="image-content">
+						
+	
+						<div class="card-image">
+							<img src="./assets/slider img2.jpg" alt="" class="card-img">
+						</div>
+					</div>
+
+					<div class="card-content">
+						<p class="description">Say a few words about this person's expertise, background and personality.</p>
+						<p class="description">Let people get an idea of who will take care of their hair.</p>
+						
+					</div>
+				</div>
+				<div class="card swiper-slide">
+					<div class="image-content">
+						
+	
+						<div class="card-image">
+							<img src="./assets/slider img3.jpg" alt="" class="card-img">
+						</div>
+					</div>
+
+					<div class="card-content">
+						<p class="description">Say a few words about this person's expertise, background and personality.</p>
+						<p class="description">Let people get an idea of who will take care of their hair.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="swiper-button-next swiper-navBtn"></div>
+		<div class="swiper-button-prev swiper-navBtn"></div>
+	</div>
+</section>
+
+<section id=works class="our-work">
+        
+	<div class="our-work-text">
+		<h2>Our Work</h2>
+		<p>Here is some of our work. We are so that our clients fully trust us and let us do these amazing transformations with their hair. For more information, check out our <a href="">instagram</a> </p>
+	</div>
+	
+	<div class="our-work-swiper swiper">
+		<div class="our-work-swiper-wrapper swiper-wrapper">
+			<div class="our-work-slide swiper-slide">
+					<img class="ourwork-img" src="/assets/aa18d16e92c6285a99b15ecf1486de25.jpg" alt="">
+			</div>
+
+			<div class="our-work-slide swiper-slide">
+					<img class="ourwork-img" src="/assets/77d792079ef40314601b23d45e4cb91f.jpg" alt="">
+			</div>
+
+			<div class="our-work-slide swiper-slide">
+					<img class="ourwork-img" src="/assets/40af6e00eda0a55b7aa93588aaa5c500.jpg" alt="">
+			</div>
+
+			<div class="our-work-slide swiper-slide">
+				
+					<img class="ourwork-img" src="/assets/nigerian.jpg" alt="">
+				
+			</div>
+
+			<div class="our-work-slide swiper-slide">
+				<img class="ourwork-img" src="/assets/ourwork.jpg" alt="">
+			</div>
+			<div class="our-work-slide swiper-slide">
+				<img class="ourwork-img" src="/assets/d7da2c554d883c911f74aaf6aa52d29e.jpg" alt="">
+			</div>
+			<div class="our-work-slide swiper-slide">
+				<img class="ourwork-img" src="/assets/pexels-elsimage-713527.jpg" alt="">
+			</div>
+			<div class="our-work-slide swiper-slide">
+				<img class="ourwork-img" src="/assets/pexels-joshua-mcknight-442355-16319595.jpg" alt="">
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="contact" class="contact-us">
+	<div class="contact-us-image">
+		<img src="/assets/pexels-ricaldo-donaldson-811733-2077169.jpg" alt="">
+	</div>
+	<div class="contact-us-text">
+		<h2>Contact Us</h2>
+		<p>If you have any questions or would like to make a reservation, feel free to get in touch with us!</p>
+
+		<div class="contact-form">
+			<form action="" id="contact-form">
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name" required>
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" required>
+				<label for="message">Message:</label>
+				<textarea id="message" name="message" required></textarea>
+				<button type="submit">Submit</button>
+			</form>
+		</div>
+
+		<div class="contact-us-links">
+			<a href="#">Instagram</a><a href="#">TikTok</a><a href="#">Facebook</a>
+		</div>
+	</div>
+</section>
+
+<footer>
+	<div class="footer-content">
+		<div class="footer-left">
+			<h4>Contact information</h4>
+			<p>Phone: 07016011109</p>
+			<p>Email: anthonyachibi@gmail.com</p>
+		</div>
+
+		<div class="footer-center">
+			<h4>Working Hours</h4>
+			<p>Mon & Sun Closed</p>
+			<p>Tue-Sat 10am-8pm</p>
+		</div>
+
+		<div class="footer-right">
+			<h4>Address</h4>
+			<p>56  Same Street, Nigeria, Kaduna, Zaria</p>
+		</div>
+	</div>
+</footer>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

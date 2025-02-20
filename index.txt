@@ -1,0 +1,239 @@
+<div class="tabbed has-bg">
+	<div class="container">
+		<div class="head-brief ">
+			<h3>Products</h3>
+			<p>African Nigerian dishes and many more.</p>
+		</div>
+
+		<nav class="tnav link-slide swiper">
+			<ul class="swiper-wrapper">
+				<li class="swiper-slide"><a href="#0">Cut & Style</a></li>
+				<li class="swiper-slide"><a href="#0">Styling & Special Ocassions</a></li>
+				<li class="swiper-slide"><a href="#0">Hair Color</a></li>
+				<li class="swiper-slide"><a href="#0">Treatments</a></li>
+				<li class="swiper-slide"><a href="#0">Hair Extension</a></li>
+			</ul>
+		</nav>
+
+		<div class="tabbed-item swiper">
+			<div class="products swiper-wrapper">
+				<div class="item swiper-slide">
+					<ul>
+						<li>
+							<div class="thumbnail covering">
+								<p>Women</p>
+								<p>1hr <br>$40</p>
+								<button>Book now</button>
+							</div>
+						</li>
+						<li>
+							<div class="thumbnail covering">
+									<p>Women</p>
+								<p>1hr <br>$40</p>
+								<button>Book now</button>
+							</div>
+						</li>
+					</ul>
+				</div>
+
+				<div class="item swiper-slide">
+					<ul>
+						<li>
+							<div class="thumbnail covering">
+								<p>Women</p>
+								<p>1hr <br>$40</p>
+								<button>Book now</button>
+							</div>
+						</li>
+						<li>
+							<div class="thumbnail covering">
+									<p>Women</p>
+								<p>1hr <br>$40</p>
+								<button>Book now</button>
+							</div>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+		</div>
+  </div>
+</div>
+
+
+//class
+
+
+
+.tabbed nav{
+    position:sticky;
+    top:0;
+    margin-bottom:2em;
+    background-color: white;
+    border-bottom:1px solid grey ;
+    z-index:10;
+}
+.services nav ul{
+    display: flex;
+    flex-wrap:wrap;
+    padding: 1em 0;
+}
+.services nav ul li{
+    margin-right:10px;
+}
+.services nav a{
+    color: grey;
+    transition: var(--trans-co);
+}
+.services-service nav a:hover,
+ .services-service nav li.swiper-slide-thumb-active a{
+    color: var(--dark-color);
+}
+.services-service nav li:not(.swiper-slide-thumb-active) a:after{
+    opacity: 0;
+}
+.services-service nav li a:hover:after{
+   opacity:1; 
+}
+.services ul{
+    display:grid;
+    grid-gap:3em;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+}
+.services .thumbnail{
+    position:relative;
+    height: 200px;
+    border-radius: 10px;
+    margin-bottom: 1em;
+    overflow:hidden;
+}
+.services nav ul li{
+    width: fit-content!important;
+}
+
+//tabbed-products
+const tabbeNav = new Swiper('.tnav', {
+  spaceBetween: 20,
+  slidesPerView: 5,
+  centeredSlides:true,
+  slidesPerGroup: false,
+  
+});
+const theTab = new Swiper('.tabbed-item', {
+  loop:true,
+  slidePerView: 1,
+  autoHeight:true,
+  thumbs: {
+    swiper: tabbeNav,
+  }
+});
+
+
+<div class="our-work-text">
+		<h2>Our Work</h2>
+		<p>Here is some of our work. We are so that our clients fully trust us and let us do these amazing transformations with their hair. For more information, check out our <a href="">instagram</a> </p>
+	</div>
+	<div class="slide-container swiper">
+		<div class="work-content">
+			<div class="card-wrapper swiper-wrapper">
+				<div class="work-card swiper-slide">
+					<div class="work-image-content">
+						<div class="work-card-image">
+							<img src="./assets/slider img1.jpg" alt="" class="work-card-img">
+						</div>
+					</div>
+				</div>
+				<div class="work-card swiper-slide">
+					<div class="work-image-content">
+						<div class="work-card-image">
+							<img src="./assets/slider img2.jpg" alt="" class="work-card-img">
+						</div>
+					</div>
+				</div>
+				<div class="work-card swiper-slide">
+					<div class="work-image-content">
+						<div class="work-card-image">
+							<img src="./assets/slider img3.jpg" alt="" class="work-card-img">
+						</div>
+					</div>
+				</div>
+				<div class="work-card swiper-slide">
+					<div class="work-image-content">
+						<div class="work-card-image">
+							<img src="./assets/slider img3.jpg" alt="" class="work-card-img">
+						</div>
+					</div>
+				</div>
+				<div class="work-card swiper-slide">
+					<div class="work-image-content">
+						<div class="work-card-image">
+							<img src="./assets/slider img3.jpg" alt="" class="work-card-img">
+						</div>
+					</div>
+				</div>
+				<div class="work-card swiper-slide">
+					<div class="work-image-content">
+						<div class="work-card-image">
+							<img src="./assets/slider img3.jpg" alt="" class="work-card-img">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+	.work-card{
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content:center; 
+}
+.work-card-image{
+  position:relative;
+  height:250px;
+  width: 250px;
+}
+.work-card-image .work-card-img{
+  height:100%;
+  width: 100%;
+  object-fit: cover; 
+}
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.449);
+  cursor: pointer;
+  overflow: hidden;
+.our-work-text{
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.our-work-text h2{
+  text-align: center;
+  font-size:45px;
+  margin:10px 0;
+  color:#403e3e;
+  letter-spacing:1.9px;
+  font-weight:lighter;
+}
+.our-work-text p, .our-work-text a{
+  text-align:center;
+  color:#646060;
+  font-size:14px;
+  line-height:25px;
+  margin: 10px 0;
+}
+.our-work{
+  padding: 40px;
+  min-height: 50vh;
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+}

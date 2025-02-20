@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title><link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="booking.css">
+</head>
+<body>
+    <header id="header">
+        <nav>
+            <div class="menu">
+                <ul>
+                    <li class="mobile-menu">
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 -960 960 960" width="25px" fill="#fff"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="desktop-menu"><a href="index.html">Home</a></li>
+                    <li class="desktop-menu"><a href="index.html">Services</a></li>
+                    <li class="desktop-menu"><a href="index.html">About </a></li>
+                    <li class="desktop-menu"><a href="index.html">Works</a></li>
+
+                </ul>
+            </div>
+        </nav>
+    
+        <div class="logo">
+            <a href="#">UNISEX</a>
+        </div>
+    
+        <div class="login">
+            <a  href="index.html">
+                Contact
+            </a>
+        </div>
+    </header>
+    <ul class="sidebar">
+        <li class="close-sidebar">
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                </svg>
+            </a>
+        </li>
+        <li class="sidebar-links"><a href="index.html">Home</a></li>
+        <li class="sidebar-links"><a href="index.html">About </a></li>
+        <li class="sidebar-links"><a href="index.html">Contact</a></li>
+        <li class="sidebar-links"><a href="index.html">Works</a></li>
+        <li class="sidebar-links"><a href="index.html">Services</a></li>
+    </ul>
+    <div class="container">
+        
+     <div class="booking-text">
+        <h1>Book Appointment</h1>
+       <div class="booking-form">
+        <form id="bookingForm">
+            <label for="service">Please select service:</label>
+            <select id="service" required>
+              <option value="Stylist Appointment">Stylist Appointment</option>
+              <option value="Hair Stylist Appointment">Hair Stylist Appointment</option>
+              <option value=" Hair Medicals"> Hair Medicals</option>
+              <option value="Style & Cut Review">Style & Cut Review</option><option value="Home Services">Home Services</option>
+            </select>
+            <label for="date">Time:</label>
+            <input type="datetime-local" name="date" id="date" required>
+            <label for="details">Details:</label>
+            <textarea name="details" id="details" required></textarea>
+            <button type="submit">Done</button>
+        </form>
+       </div>
+     
+     </div>
+     <div class="booking-img">
+        <h3>Appointments</h3>
+        <div id="appointmentsList"></div>
+    </div>
+    </div>
+    <script src="booking.js"></script>
+</body>
+</html>
