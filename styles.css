@@ -677,8 +677,6 @@ left: 50%;
 transform: translate(-50%, -50%);
 width: 100%;
 z-index:5000;
-height:100vh;
-background-color: rgba(0, 0, 0, 0.5);
 justify-content: center;
 align-items: center;
 }
